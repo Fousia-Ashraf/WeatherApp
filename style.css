@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Eczar&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@600&family=Montserrat:wght@500&family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Caveat:wght@600&family=Montserrat:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital@1&family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+/* font-family: 'Times New Roman', Times, serif */
+font-family:"poppins",sans-serif;
+
+
+
+}
+/* ----------------------------------------------weathet-1-css---------------------------------------- */
+.animation{
+
+    animation: text-animation 8s infinite;
+}
+
+
+
+
+
+#banner1{
+
+    background-image: url('./images/visar-neziri-mlXMKvQ1CYU-unsplash.jpg');
+    background-repeat:no-repeat ;
+    background-size: cover;
+    background-position: center center;
+
+
+}
+
+
+
+
+
+#index{
+border-radius: 25px;
+margin-top: 70px;
+/* background-color: rgba(223, 124, 12, 0.4); */
+background-color: rgba(175, 61, 241, 0.644);
+
+
+
+
+}
+
+#index h2{
+    /* font-family: "Montserrat", Helvetica, Arial, sans-serif;  */
+    /* font-family: "Playfair Display", "Times New Roman", Times, serif; */
+/* font-weight: 600; */
+letter-spacing: 0.01em;
+}
+#index1{
+    display: flex;
+    height: 48px;
+    border: 1px solid white;
+    border-radius: 30px;
+}
+#loc{
+    background: transparent;border: none;
+    color: white;
+    border-style: none;
+    box-shadow: none;
+}
+#loc::placeholder{
+    color: white;
+}
+#s1:focus{
+    
+        /* outline: none; */
+   
+}
+#index1:is(:focus,:valid){
+    border: 3px solid whitesmoke;
+}
+
+/* #s1{
+    height: 48px;
+} */
+#indbut{
+height: 50px;
+margin-top: 0px;
+}
+#indbut:hover{
+    font-size: 20px;
+}
+
+/* --------------------------------weather-2-css---------------------------------------- */
+
+
+#w2div{
+    background-color: rgba(161, 101, 218, 0.6);
+    height:400px ;
+    border:none ;
+    border-radius: 30px;
+
+
+}
+
+#row1{
+    height: 200px;
+    z-index: 1;
+}
+#banner2{
+    background-image: url('./images/238738.png');
+    background-repeat:no-repeat ;
+    background-size: cover;
+ background-position: center center;
+
+
+}
+
+#weather1{
+
+background-color: rgb(151, 70, 226,0.6);
+
+}
+
+#colwea h2{
+    /* font-family: 'Times New Roman', Times, serif; */
+    /* font-family: "Montserrat", Helvetica, Arial, sans-serif; */
+    letter-spacing: 0em;
+
+}
+
+#img{
+
+    width:100px;
+    height:100px;
+    
+
+}
+#img img{
+    width:100px;
+    height:100px;
+}
+#g1{
+    padding: 5px;
+    margin-bottom: 5px;
+
+
+}
+.seperator{
+
+    height: 0.1px;
+    width:377px;
+    margin: 25px 0;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+}
+#d{
+    font-size: 35px;
+    font-weight: 700;
+
+}
+#cloud1{
+    font-size: small;
+    
+}
+#l1{
+    font-size: small;
+}
+@media(max-width:600px){
+#q2,#q4{
+border-right: 0px ;
+
+}
+
+}

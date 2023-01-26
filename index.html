@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./images/icons/rain2.png" type="image/x-icon">
+
+    <title>Weather Today</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/2265084165.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body style="background-image: url('./images/238738.png');">
+
+    <div id="banner2" class="banner-image w-100 vh-100 justify-content-center align-items-center" style=" background-image: url('./images/238738.png');
+    background-repeat:no-repeat ;
+    background-size: cover;
+ background-position: center center;
+">
+<div id="index" class="container w-50 text-center text-white justify-content-center mt-3 p-3 mb-4" style="background-color:rgba(100, 49, 129, 0.7) ;border-radius: 20px;">
+    <h2 class="animation" style="color: white;"><i class="bx bx-left-arrow-alt"></i>Weather Today</h2>
+    <p class="text-white align-items-center"><h6>Enter a valid city name</h6></p>
+    <div id="index1" class="container w-100 text-center justify-content-center mt-2 mb-2 " required>
+        
+        <input id="loc" type="text" placeholder="What city...?" class="form-control mt-1" >   <!-- first input-->
+        <button id="indbut" onclick="findPlace()" type="button" class="text-white " style="background: transparent;border: none;"><i class="fa fa-search" aria-hidden="true"></i></button>
+        <!--first button-->
+    </div>
+</div>
+
+
+        <div id="result" class=" container w-75 text-center justify-content-center">
+
+            <div class="row container w-100 text-center justify-content-center">
+                <div id="colwea" class="col-md-12 p-4"
+                    style="background-color: rgba(100, 49, 129, 0.7);border: none;border-radius: 7px;">
+
+                    <div id="img" class="container align-items-center justify-content-center" style=" width:100px;
+                        height:100px;">
+                        <img src="./images/icons/sunny_sun_cloud_weather_cloudy_icon_194267.png" alt="" style=" width:100px;
+                            height:100px;">
+                    </div>
+
+                    <div id="g1" class="" style=" padding: 5px;
+                        margin-bottom: 5px;">
+                        <div class="row  justify-content-center text-white">
+                            <div id="lat" class="col col-lg-2">
+                                lat
+                            </div>
+                            <div id="d" class="col-md-auto" style=" font-size: 35px;
+                                font-weight: 700;">
+
+                                <span id="d2" class="deg">15<sup id="d3">°</sup>C</span>
+                            </div>
+                            <div id="lon" class="col col-lg-2">
+                                lon
+                            </div>
+                        </div>
+
+                    </div>
+                    <div id="cloud1" class="weather text-white p-2" style="font-size: small;">Broken clouds</div>
+
+                    <div id="l1" class="location text-white p-2" style="font-size: small;">
+                        <i class="bx bx-map"></i>
+                        <span id="l2"> Perumbavoor,India</span>
+
+
+                    </div>
+                    <div class="row p-2 text-white align-items-center justify-content-center">
+                        <div id="q1" class="col-6 col-sm-3 p-2">visibilty<br>
+                            <i class="fa-light fa fa-eye"></i><br>
+                            <h6 id="v1">6km</h6>
+                        </div>
+                        <div id="q2" class="col-6 col-sm-3 p-2">wind<br>
+                            <i class="fa-light fa fa-wind"></i></i><br>
+                            <h6 id="v2">1.08kmPh</h6>
+                        </div>
+                        <div id="q3" class="col-6 col-sm-3 p-2">humidity<br>
+                            <!-- <i class="bx bxs-droplet-half"></i> -->
+                            <img src="./images/icons/Humidity-icon.png" alt="" style="width: 30px;height:30px;">
+
+                            <br>
+                            <h6 id="v3">50%</h6>
+                        </div>
+                        <div id="q4" class="col-6 col-sm-3 p-2">Pressure<br>
+                            <img src="./images/icons/pressure-icon-png-13.jpg" alt=""
+                                style="width: 20px;height: 20px;"><br>
+                            <h6 id="v4">10<span>hpa</span></h6>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+
+        </div>
+
+
+
+    </div>
+
+
+
+</body>
+<script src="./wheather.js"></script>
+
+</html>
